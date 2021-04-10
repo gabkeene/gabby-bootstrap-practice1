@@ -1,4 +1,5 @@
 // Custom variable overrides go here
+$color-white: #FFFFFF;
 // For options, see node_modules/bootstrap/scss/_variables.scss
 // examples:
 // $body-bg: black;
@@ -10,3 +11,18 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Import partials here
+@import "footer";
+@import "header";
+@import "article";
+@import "nav";
+
+h1, h2 {
+  font-family: 'New Tegomin', serif;
+}
+
+// @media
+@include media-breakpoint-up(sm) {
+  .left-rail {
+    border-right: gray solid 1px;
+  }
+}
